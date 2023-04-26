@@ -10,7 +10,7 @@ Start-Transcript -Path $logPath
 Invoke-WebRequest -Uri $url -OutFile $outputPath
 
 # Execute the script with the specified argument
-PowerShell.exe -ExecutionPolicy Bypass -File $outputPath $argument
+PowerShell.exe -ExecutionPolicy Bypass -File $outputPath $argument -Verb runAs
 
 # Stop the transcript and close the log file
 Stop-Transcript
