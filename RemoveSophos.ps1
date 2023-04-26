@@ -41,7 +41,7 @@ $strVer                                   = "7.11"
 #Start time of script.
 $StartTime                                = $(get-date)
 #Log file location
-$global:strLogFile                        = $env:windir\Temp+"SophosRemoval.txt"
+$global:strLogFile                        = $env:windir\Temp + "SophosRemoval.txt"
 $global:blNoLogFile                       = $false
 #Global Counters
 $global:intRegKeysFound                   = 0
@@ -80,7 +80,7 @@ $aCryptSvc                 = "CryptSvc", "Cryptographic Services"
 $aRPC                      = "RpcSs", "Remote Procedure Call (RPC)"
 $aTaskShed                 = "Schedule", "Task Scheduler"
 #MSI backup location to be super safe when deleting cached Sophos MSIs
-$strBackupMSILocation      = $env:windir\Temp+"\SophosRemovalMSIs"
+$strBackupMSILocation      = $env:windir\Temp + "\SophosRemovalMSIs"
 #Default time in seconds before shutting down
 $intDelaySecondsRestart    = 10
 #Binary to check for, when checking scheduled scans
